@@ -1,0 +1,31 @@
+{
+  "name": "prettier-playground",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "prettier": "prettier --write \"src/**/*.{js,jsx} \""
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,jsx}": [
+      "prettier --write \"src/**/*.{js,jsx} \"",
+      "git add"
+    ]
+  },
+  "dependencies": {
+    "prettier": "^1.18.2",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  },
+  "devDependencies": {
+    "husky": "^2.4.1",
+    "lint-staged": "^8.2.0",
+    "webpack": "^4.33.0",
+    "webpack-cli": "^3.3.4"
+  }
+}
