@@ -1,5 +1,5 @@
 {
-  "printWidth": 80,
+  "printWidth": 88,
   "bracketSpacing": true,
   "tabWidth": 2,
   "useTabs": false,
@@ -7,6 +7,6 @@
   "semi": true,
   "trailingComma": "none",
   "arrowParens": "avoid",
-  "jsxBracketSameLine": true,
+  "jsxBracketSameLine": false,
   "endOfLine": "lf"
 }
